@@ -1,0 +1,75 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(188, 231, 217);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+    width: auto;
+    height: 50px;
+    background-color: antiquewhite;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header h1 {
+    color: rgb(207, 97, 105);
+}
+
+.calculator {
+    width: 500px;
+    height: 500px;
+    background-color: rgb(159, 205, 238);
+    border-radius: 5%;
+    margin: 100px auto;
+    text-align: center;
+}
+.input-field{
+    height: 30%;
+    text-align: center;
+    padding-top: 10px;
+}
+input {
+    padding: 10px;
+}
+.calculator input {
+    width: 70%;
+    height: 25px;
+    border-radius: 10px;
+    border: none;
+
+}
+button {
+    color: white;
+    margin-top: 20px;
+    width: 40%;
+    font-size: 20px;
+    border: none;
+    background-color: rgb(234, 78, 78);
+    padding: 5px;
+    border-radius: 10px;
+}
+
+button:hover {
+    background-color: orange;
+    border: black solid 1px;
+}
+
+.result-number {
+    background-color: aliceblue;
+    width: 80%;
+    height: 200px;
+    margin: 0 auto;
+    border-radius: 10px;
+    text-align: left;
+}
+#your-number {
+    margin: 10px 10px;
+    word-wrap: break-word;
+    white-space: normal;
+}
