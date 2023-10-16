@@ -13,8 +13,25 @@
 
     <div class="calculator">
         <div class="input-field">
-            <h2>Enter decimal number:</h2>
-            <input type="text" id="input-box" placeholder="E.g.: 12345, max 16 digits">
+            <h2>Convert my number from: </h2>
+            <div class="input-number">
+               <input type="radio" id="dec" name="input-number" value="decimal">
+               <label for="dec">Decimal</label>
+               <input type="radio" id="bin" name="input-number" value="binary">
+               <label for="bin">Binary</label>
+               <input type="radio" id="hex" name="input-number" value="hexa">
+               <label for="hex">Hexadecimal</label>
+            </div>
+            <h2>To:</h2>
+            <div class="output-number">
+                <input type="radio" id="dec-out" name="output-number" value="decimal">
+                <label for="dec-out">Decimal</label>
+                <input type="radio" id="bin-out" name="output-number" value="binary">
+                <label for="bin-out">Binary</label>
+                <input type="radio" id="hex-out" name="output-number" value="hexa">
+                <label for="hex-out">Hexadecimal</label>
+             </div>
+            <input type="text" id="input-box" placeholder="Enter your number here!">
             <button onclick="convert()">Convert</button>
         </div>
         <div class="result">

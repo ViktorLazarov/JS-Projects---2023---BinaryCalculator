@@ -1,5 +1,7 @@
 *{
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
@@ -8,33 +10,34 @@ body {
     text-align: center;
 }
 
-/* .header {
-    width: auto;
-    height: 50px;
-    background-color: antiquewhite;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-} */
-
 .header h1 {
     color: rgb(218, 23, 23);
+    margin-top: 20px;
 }
 
 .calculator {
     width: 500px;
-    height: 500px;
+    height: auto;
     background-color: rgb(159, 205, 238);
     border-radius: 5%;
     margin: 100px auto;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    
 }
 .input-field{
-    height: 30%;
+    height: auto;
     text-align: center;
     padding-top: 10px;
+    /* background-color: red; */
 }
+.input-field h2 {
+    margin-top: 20px;
+}
+.result {
+    /* background-color: blue; */
+}
+
 input {
     padding: 10px;
 }
@@ -48,6 +51,7 @@ input {
 button {
     color: white;
     margin-top: 20px;
+    margin-bottom: 10px;
     width: 40%;
     font-size: 20px;
     border: none;
@@ -58,14 +62,13 @@ button {
 
 button:hover {
     background-color: orange;
-    border: black solid 1px;
 }
 
 .result-number {
     background-color: aliceblue;
     width: 80%;
     height: 200px;
-    margin: 0 auto;
+    margin: 0 auto 20px;
     border-radius: 10px;
     text-align: left;
 }
@@ -73,4 +76,13 @@ button:hover {
     margin: 10px 10px;
     word-wrap: break-word;
     white-space: normal;
+}
+
+#dec, #bin, #hex, #dec-out, #bin-out, #hex-out {
+    width: 15px;
+    height: 15px;
+}
+.input-number, .output-number {
+    margin: 15px auto;
+
 }
