@@ -2,7 +2,10 @@ function binaryCalculator(input) {
     let number = input;
     let bit = 0;
     let resultArr = [];
-
+    if (number === '0' ){
+        return '0';
+    }
+    
     while (number > 0) {
         bit = number % 2;
         number = Math.floor(number / 2);
